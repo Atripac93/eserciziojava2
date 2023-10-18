@@ -80,14 +80,14 @@ if(num4 >= 20){
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
-for(let i = 0; i<16 ; i++){
+/*for(let i = 0; i<16 ; i++){
  if(i %2 === 0){
     console.log("numero pari")
  }
  else{
     console.log("numero dispari")
  }
-}
+} */
 
 
 //ESERCIZI EXTRA NON OBBLIGATORI
@@ -151,13 +151,19 @@ console.log(finale)
 */
 
 let isMale = true;
-let gender = isMale = true ? "Male" : "Female";
+let gender = isMale ? "Male" : "Female";
 console.log(gender)
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
 
-for(let i = 0; i < 101; i++){
-    console.log(i)
+for(let i = 1; i < 101; i++){
+   if((i % 3 === 0) && (i % 5 === 0)){
+    console.log(i + "FrizzBuzz");
+   }else if(i % 3 === 0){
+    console.log(i + "Frizz");
+   }else if(i % 5 === 0){
+    console.log(i + "Buzz");
+   }
 }
